@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>LoadsOfMetal Survey Form</title>
+  </head>
+  <body>
+    <header>
+      <h1 id="title">LoadsOfMetal Survey Form</h1>
+      <p id="description">
+        Thank you for taking the time to help us improve our festival
+      </p>
+    </header>
+    <form id="survey-form">
+      <div class="survey-div">
+        <label for="name" id="name-label">
+          Name
+          <input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="Enter name"
+            required
+          />
+        </label>
+
+        <label for="email" id="email-label">
+          Email
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder=" Enter Email"
+            required
+          />
+        </label>
+
+        <label for="number" id="number-label">
+          Age (optional)
+          <input
+            type="number"
+            id="number"
+            name="number"
+            min="10"
+            max="99"
+            placeholder="Age"
+          />
+        </label>
+      </div>
+
+      <div class="survey-div">
+        <p>How many times have you been on Loads of Metal?</p>
+        <select id="dropdown">
+          <option>Select an option</option>
+          <option>1</option>
+          <option>2</option>
+          <option>3</option>
+          <option>4</option>
+          <option>5</option>
+          <option>6</option>
+        </select>
+      </div>
+
+      <div class="survey-div">
+        <p>Would you want to return in the future?</p>
+        <label for="yes">
+          <input
+            id="yes"
+            type="radio"
+            name="yesORno"
+            value="yes"
+            class="inline"
+            checked
+          />
+          Yes
+        </label>
+        <label for="no">
+          <input
+            id="no"
+            type="radio"
+            name="yesORno"
+            value="no"
+            class="inline"
+          />
+          No
+        </label>
+        <label for="notSure">
+          <input
+            id="notSure"
+            type="radio"
+            name="yesORno"
+            value="notSure"
+            class="inline"
+          />
+          Not sure
+        </label>
+      </div>
+
+      <div class="survey-div">
+        <p>What genres would you like to see more of?</p>
+
+        <label for="blackMetal">
+          <input id="blackMetal" type="checkbox" value="blackMetal" />
+          Balck Metal
+        </label>
+
+        <label for="speedMetal">
+          <input id="speedMetal" type="checkbox" value="speedMetal" />
+          Speed Metal
+        </label>
+
+        <label for="powerMetal">
+          <input id="powerMetal" type="checkbox" value="powerMetal" />
+          Power Metal
+        </label>
+
+        <label for="thrashMetal">
+          <input id="thrashMetal" type="checkbox" value="thrashMetal" />
+          Thrash Metal
+        </label>
+
+        <label for="doomMetal">
+          <input id="doomMetal" type="checkbox" value="doomMetal" />
+          Doom Metal
+        </label>
+
+        <label for="deathMetal">
+          <input id="deathMetal" type="checkbox" value="deathMetal" />
+          Death Metal
+        </label>
+
+        <label for="glamMetal">
+          <input id="glamMetal" type="checkbox" value="glamMetal" />
+          Glam Metal
+        </label>
+      </div>
+
+      <div class="survey-div">
+        <p>Any suggestions or comments?</p>
+        <label for="bio">
+          <textarea
+            id="bio"
+            rows="10"
+            cols="60"
+            placeholder="Enter your comment here..."
+          ></textarea>
+        </label>
+      </div>
+
+      <button id="submit">Submit</button>
+    </form>
+  </body>
+</html>
